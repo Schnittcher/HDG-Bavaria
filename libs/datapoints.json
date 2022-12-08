@@ -234,5 +234,209 @@
                 }
             ]
         }
+    ],
+    "puffer": [
+        {
+            "typeName": "3Temp",
+            "supported": "3Temp",
+            "nodes": [
+                {
+                    "ident": "24000",
+                    "name": "Temperatur oben",
+                    "type": "VARIABLETYPE_FLOAT",
+                    "profile": "~Temperature",
+                    "dataid": 24000,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "24001",
+                    "name": "Temperatur mitte",
+                    "type": "VARIABLETYPE_FLOAT",
+                    "profile": "~Temperature",
+                    "dataid": 24001,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "24002",
+                    "name": "Temperatur unten",
+                    "type": "VARIABLETYPE_FLOAT",
+                    "profile": "~Temperature",
+                    "dataid": 24002,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "24004",
+                    "name": "Pufferladung ein",
+                    "type": "VARIABLETYPE_FLOAT",
+                    "profile": "~Temperature",
+                    "dataid": 24004,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "24006",
+                    "name": "Pufferladung aus",
+                    "type": "VARIABLETYPE_FLOAT",
+                    "profile": "~Temperature",
+                    "dataid": 24006,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "24098",
+                    "name": "Angeforderte Temperatur von Abnehmern",
+                    "type": "VARIABLETYPE_FLOAT",
+                    "profile": "~Temperature",
+                    "dataid": 24098,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "24099",
+                    "name": "Angeforderte Temperatur bei Quelle",
+                    "type": "VARIABLETYPE_FLOAT",
+                    "profile": "~Temperature",
+                    "dataid": 24099,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                }
+            ]
+        }
+    ],
+    "heizkreis": [
+        {
+            "typeName": "Standard",
+            "supported": "Standard",
+            "nodes": [
+                {
+                    "ident": "6022",
+                    "name": "Tagbetrieb Raumtemperatur Soll",
+                    "type": "VARIABLETYPE_FLOAT",
+                    "profile": "~Temperature",
+                    "dataid": 6022,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "6023",
+                    "name": "Nachtbetrieb Raumtemperatur Soll",
+                    "type": "VARIABLETYPE_FLOAT",
+                    "profile": "~Temperature",
+                    "dataid": 6023,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "26099",
+                    "name": "Angeforderte Temperatur bei Quelle",
+                    "type": "VARIABLETYPE_FLOAT",
+                    "profile": "~Temperature",
+                    "dataid": 26099,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "26000",
+                    "name": "Vorlauftemperatur",
+                    "type": "VARIABLETYPE_FLOAT",
+                    "profile": "~Temperature",
+                    "dataid": 26000,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                }
+            ]
+        }
+    ],
+    "brauchwasser": [
+        {
+            "typeName": "Standard",
+            "supported": "Standard",
+            "nodes": [
+                {
+                    "ident": "28000",
+                    "name": "Temperatur oben",
+                    "type": "VARIABLETYPE_FLOAT",
+                    "profile": "~Temperature",
+                    "dataid": 28000,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "8021",
+                    "name": "Brauchwasserladung Ein Temperatur oben Soll",
+                    "type": "VARIABLETYPE_FLOAT",
+                    "profile": "~Temperature",
+                    "dataid": 8021,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "8022",
+                    "name": "Brauchwasserladung Aus Temperatur oben Soll",
+                    "type": "VARIABLETYPE_FLOAT",
+                    "profile": "~Temperature",
+                    "dataid": 8022,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "28003",
+                    "name": "Bereitstellung durch Solar",
+                    "type": "VARIABLETYPE_FLOAT",
+                    "profile": "~Temperature",
+                    "dataid": 28003,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "28098",
+                    "name": "Angeforderte Temperatur von Abnehmern",
+                    "type": "VARIABLETYPE_FLOAT",
+                    "profile": "~Temperature",
+                    "dataid": 28098,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "28098",
+                    "name": "Angeforderte Temperatur von Abnehmern",
+                    "type": "VARIABLETYPE_FLOAT",
+                    "profile": "~Temperature",
+                    "dataid": 28098,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "28099",
+                    "name": "Angeforderte Temperatur bei Quelle",
+                    "type": "VARIABLETYPE_FLOAT",
+                    "profile": "~Temperature",
+                    "dataid": 28099,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                }                
+            ]
+        }
     ]
 }

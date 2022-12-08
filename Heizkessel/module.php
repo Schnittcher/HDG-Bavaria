@@ -34,13 +34,12 @@ require_once __DIR__ . '/../libs/HDGModule.php';
                 }
             }
 
-            IPS_LogMessage('datapoints', print_r(self::$Variables, true));
-
             parent::ApplyChanges();
         }
 
         public function ReceiveData($JSONString)
         {
+			$this->SendDebug('JSON',$JSONString,0);
             $JSONData = json_decode($JSONString, true);
             $data = json_decode($JSONData['Data'], true);
 

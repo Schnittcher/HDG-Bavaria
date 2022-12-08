@@ -4,9 +4,13 @@
     "type": 3,
     "vendor": "HDG Bavaria",
     "aliases": [],
-    "parentRequirements": [],
+    "parentRequirements": [
+        "{5D9C8A18-754F-7989-2285-4A1C90222194}"
+    ],
     "childRequirements": [],
-    "implemented": [],
+    "implemented": [
+        "{EE058020-CD88-B252-78DA-2920D1C7513B}"
+    ],
     "prefix": "HDG",
     "url": "https://deinsmarthome.info"
 }
