@@ -1,0 +1,12 @@
+{
+    "id": "{28FC975C-5CC2-19A9-94E7-E9999CC9AF3E}",
+    "name": "Puffer",
+    "type": 3,
+    "vendor": "HDG Bavaria",
+    "aliases": [],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "HDG",
+    "url": "https://deinsmarthome.info"
+}

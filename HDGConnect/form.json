@@ -1,0 +1,21 @@
+{
+    "elements": [
+        {
+            "type": "CheckBox",
+            "name": "Active",
+            "caption": "Active"
+        },
+        {
+            "type": "ValidationTextBox",
+            "name": "URL",
+            "caption": "HDG Bavaria URL"
+        },
+        {
+            "type": "NumberSpinner",
+            "name": "Intervall",
+            "caption": "Update Intervall"
+        }
+    ],
+    "actions": [],
+    "status": []
+}

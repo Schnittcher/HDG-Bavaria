@@ -1,0 +1,12 @@
+{
+    "id": "{90B110FF-D412-4ADB-264A-903BFDF95415}",
+    "name": "Brauchwasser",
+    "type": 3,
+    "vendor": "HDG Bavaria",
+    "aliases": [],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "HDG",
+    "url": "https://deinsmarthome.info"
+}

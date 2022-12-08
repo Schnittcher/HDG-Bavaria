@@ -1,0 +1,12 @@
+{
+    "id": "{BF319C39-836F-43C2-F388-0F2FCF7ECA59}",
+    "name": "Heizkreis",
+    "type": 3,
+    "vendor": "HDG Bavaria",
+    "aliases": [],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "HDG",
+    "url": "https://deinsmarthome.info"
+}

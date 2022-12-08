@@ -1,0 +1,16 @@
+{
+    "id": "{C164EB47-32B6-C0DA-71E0-E5569EA8D842}",
+    "name": "HDGConnect",
+    "type": 2,
+    "vendor": "HDG Bavaria",
+    "aliases": [],
+    "parentRequirements": [],
+    "childRequirements": [
+        "{EE058020-CD88-B252-78DA-2920D1C7513B}"
+    ],
+    "implemented": [
+        "{5D9C8A18-754F-7989-2285-4A1C90222194}"
+    ],
+    "prefix": "HDG",
+    "url": "http://deinsmarthome.info"
+}

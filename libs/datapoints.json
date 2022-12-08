@@ -1,0 +1,238 @@
+{
+    "heizkessel": [
+        {
+            "typeName": "K38-63",
+            "supported": "K38-63",
+            "nodes": [
+                {
+                    "ident": "20029",
+                    "name": "Warnungen",
+                    "type": "VARIABLETYPE_STRING",
+                    "profile": "",
+                    "dataid": 20029,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "24013",
+                    "name": "Mischer",
+                    "type": "VARIABLETYPE_STRING",
+                    "profile": "",
+                    "dataid": 24013,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "24014",
+                    "name": "Bild Pumpen",
+                    "type": "VARIABLETYPE_STRING",
+                    "profile": "",
+                    "dataid": 24014,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": false
+                },
+                {
+                    "ident": "22003",
+                    "name": "Kesseltemperatur",
+                    "type": "VARIABLETYPE_FLOAT",
+                    "profile": "~Temperature",
+                    "dataid": 22003,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "20033",
+                    "name": "Betriebsart Anlage Status??",
+                    "type": "VARIABLETYPE_STRING",
+                    "profile": "",
+                    "dataid": 20033,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "20032",
+                    "name": "Betriebsart Anlage",
+                    "type": "VARIABLETYPE_STRING",
+                    "profile": "",
+                    "dataid": 20032,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "22026",
+                    "name": "Betriebsphase",
+                    "type": "VARIABLETYPE_STRING",
+                    "profile": "",
+                    "dataid": 22026,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "22022",
+                    "name": "Kesseltemperatur Soll",
+                    "type": "VARIABLETYPE_FLOAT",
+                    "profile": "~Temperature",
+                    "dataid": 22022,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "22023",
+                    "name": "Rücklauftemperatur Soll",
+                    "type": "VARIABLETYPE_FLOAT",
+                    "profile": "~Temperature",
+                    "dataid": 22023,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "22001",
+                    "name": "Abgastemperatur",
+                    "type": "VARIABLETYPE_FLOAT",
+                    "profile": "~Temperature",
+                    "dataid": 22001,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "2601",
+                    "name": "Kesselregelung Variante",
+                    "type": "VARIABLETYPE_STRING",
+                    "profile": "",
+                    "dataid": 2601,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "22020",
+                    "name": "Kessel Hauptbetriebsart",
+                    "type": "VARIABLETYPE_STRING",
+                    "profile": "",
+                    "dataid": 22020,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "22021",
+                    "name": "Externe Direkt-Anforderung",
+                    "type": "VARIABLETYPE_INTEGER",
+                    "profile": "",
+                    "dataid": 22021,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "22030",
+                    "name": "Saugzuggebläse",
+                    "type": "VARIABLETYPE_INTEGER",
+                    "profile": "",
+                    "dataid": 22030,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "22011",
+                    "name": "Betriebsstunden Kessel",
+                    "type": "VARIABLETYPE_INTEGER",
+                    "profile": "",
+                    "dataid": 22011,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "22024",
+                    "name": "Kesselleistung",
+                    "type": "VARIABLETYPE_INTEGER",
+                    "profile": "",
+                    "dataid": 22024,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "22025",
+                    "name": "Zeit bis Reinigung",
+                    "type": "VARIABLETYPE_STRING",
+                    "profile": "",
+                    "dataid": 22025,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                }
+            ]
+        }
+    ],
+    "zufuehrung": [
+        {
+            "typeName": "Standard",
+            "supported": "Standard",
+            "nodes": [
+                {
+                    "ident": "1402",
+                    "name": "Betriebswahl",
+                    "type": "VARIABLETYPE_STRING",
+                    "profile": "",
+                    "dataid": 1402,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "21006",
+                    "name": "Aktueller Lagerinhalt",
+                    "type": "VARIABLETYPE_INTEGER",
+                    "profile": "HDG.KG",
+                    "dataid": 21006,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "21007",
+                    "name": "Verbrauch seit letzter Füllung",
+                    "type": "VARIABLETYPE_INTEGER",
+                    "profile": "HDG.KG",
+                    "dataid": 21007,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "21008",
+                    "name": "Letzte Füllung",
+                    "type": "VARIABLETYPE_INTEGER",
+                    "profile": "HDG.KG",
+                    "dataid": 21008,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "21008Datum",
+                    "name": "Datum letzter Füllung",
+                    "type": "VARIABLETYPE_STRING",
+                    "profile": "",
+                    "dataid": false,
+                    "hdgType": false,
+                    "action": false,
+                    "keep": true
+                }
+            ]
+        }
+    ]
+}
