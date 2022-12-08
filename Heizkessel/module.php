@@ -45,7 +45,15 @@ require_once __DIR__ . '/../libs/HDGModule.php';
             $data = json_decode($JSONData['Data'], true);
 
             foreach ($data as $key => $value) {
-                $this->SetValue($value['id'], $value['text']);
+				switch ($value['id']) {
+					case 22024: //Kesselleistung
+						$menge = substr($value['text'], 0, -1); //% entfernen
+						break;
+					default:
+					$this->SetValue($value['id'], $value['text']);
+						break;
+				}
+                
             }
         }
     }
