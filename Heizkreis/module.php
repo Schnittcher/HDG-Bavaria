@@ -2,21 +2,21 @@
 
 declare(strict_types=1);
 require_once __DIR__ . '/../libs/HDGModule.php';
-	class Heizkreis extends HDGModule
-	{
-		public static $Variables = [];
+    class Heizkreis extends HDGModule
+    {
+        public static $Variables = [];
 
-		public function Create()
-		{
-			//Never delete this line!
-			parent::Create();
-		}
+        public function Create()
+        {
+            //Never delete this line!
+            parent::Create();
+        }
 
-		public function Destroy()
-		{
-			//Never delete this line!
-			parent::Destroy();
-		}
+        public function Destroy()
+        {
+            //Never delete this line!
+            parent::Destroy();
+        }
 
         public function ApplyChanges()
         {
@@ -35,13 +35,13 @@ require_once __DIR__ . '/../libs/HDGModule.php';
             parent::ApplyChanges();
         }
 
-		public function ReceiveData($JSONString)
+        public function ReceiveData($JSONString)
         {
-			$this->SendDebug('JSON',$JSONString,0);
+            $this->SendDebug('JSON', $JSONString, 0);
             $JSONData = json_decode($JSONString, true);
             $data = json_decode($JSONData['Data'], true);
             foreach ($data as $key => $value) {
                 $this->SetValue($value['id'], $value['text']);
             }
         }
-	}
+    }

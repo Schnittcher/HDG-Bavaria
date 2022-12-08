@@ -39,20 +39,19 @@ require_once __DIR__ . '/../libs/HDGModule.php';
 
         public function ReceiveData($JSONString)
         {
-			$this->SendDebug('JSON',$JSONString,0);
+            $this->SendDebug('JSON', $JSONString, 0);
             $JSONData = json_decode($JSONString, true);
             $data = json_decode($JSONData['Data'], true);
 
             foreach ($data as $key => $value) {
-				switch ($value['id']) {
-					case 22024: //Kesselleistung
-						$menge = substr($value['text'], 0, -1); //% entfernen
-						break;
-					default:
-					$this->SetValue($value['id'], $value['text']);
-						break;
-				}
-                
+                switch ($value['id']) {
+                    case 22024: //Kesselleistung
+                        $menge = substr($value['text'], 0, -1); //% entfernen
+                        break;
+                    default:
+                    $this->SetValue($value['id'], $value['text']);
+                        break;
+                }
             }
         }
     }
