@@ -4,8 +4,7 @@
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-green.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 # HDGBavaria
-   Dieses Modul stellt eine Verbindung zur der Philips HUE Bridge her, um HUE Geräte in IP-Symcon zu integrieren.
-   Das Modul basiert auf der neuen API von Philips HUE, welches als Rückkanal SSE (Server-Sent Events) benutzt.
+   Dieses Modul stellt eine Verbindung zur einer HDG Bavaria Heizung her.
  
 ## Inhaltverzeichnis
 - [HDGBavaria](#hdgbavaria)
