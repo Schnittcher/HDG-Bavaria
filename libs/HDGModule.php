@@ -125,7 +125,7 @@ class HDGModule extends IPSModule
         $headers[] = 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8';
 
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $URL. '/ApiManager.php?action=dataRefresh');
+        curl_setopt($ch, CURLOPT_URL, $URL . '/ApiManager.php?action=dataRefresh');
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
@@ -139,6 +139,6 @@ class HDGModule extends IPSModule
             $this->LogMessage('Error: ' . $HttpCode, KL_ERROR);
             return [];
         }
-        return json_decode($Response,true);
+        return json_decode($Response, true);
     }
 }
