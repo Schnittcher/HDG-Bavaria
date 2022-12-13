@@ -158,7 +158,7 @@
                     "ident": "22024",
                     "name": "Kesselleistung",
                     "type": "VARIABLETYPE_INTEGER",
-                    "profile": "",
+                    "profile": "~Intensity.100",
                     "dataid": 22024,
                     "hdgType": "string",
                     "action": false,

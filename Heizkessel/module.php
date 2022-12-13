@@ -45,9 +45,6 @@ require_once __DIR__ . '/../libs/HDGModule.php';
 
             foreach ($data as $key => $value) {
                 switch ($value['id']) {
-                    case 22024: //Kesselleistung
-                        $menge = substr($value['text'], 0, -1); //% entfernen
-                        break;
                     default:
                     $this->SetValue($value['id'], $value['text']);
                         break;
