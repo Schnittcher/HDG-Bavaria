@@ -173,6 +173,16 @@
                     "hdgType": "string",
                     "action": false,
                     "keep": true
+                },
+                {
+                    "ident": "22000",
+                    "name": "Brennraumtemperatur",
+                    "type": "VARIABLETYPE_FLOAT",
+                    "profile": "~Temperature",
+                    "dataid": 22000,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
                 }
             ]
         }
@@ -354,6 +364,16 @@
                     "type": "VARIABLETYPE_FLOAT",
                     "profile": "~Temperature",
                     "dataid": 26000,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "20000",
+                    "name": "Außentemperatur",
+                    "type": "VARIABLETYPE_FLOAT",
+                    "profile": "~Temperature",
+                    "dataid": 20000,
                     "hdgType": "string",
                     "action": false,
                     "keep": true
