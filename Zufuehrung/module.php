@@ -12,6 +12,7 @@ require_once __DIR__ . '/../libs/HDGModule.php';
             parent::Create();
 
             $this->RegisterProfileInteger('HDG.KG', 'Tree', '', ' kg', 0, 0, 1);
+            $this->RegisterProfileFloat('HDG.Tonne', 'Tree', '', ' t', 0, 0, 0.01, 2);
         }
 
         public function Destroy()
@@ -48,17 +49,21 @@ require_once __DIR__ . '/../libs/HDGModule.php';
                 switch ($value['id']) {
                     case 21006:
                     case 21007:
-                        $id = $value['id'];
                         $value = explode(' ', $value['text']);
-                        $this->SetValue($id, $value[0]);
+                        $this->SetValue($value['id'], $value[0]);
                         break;
                     case 21008: //Letzte Füllung
-                        $id = $value['id'];
                         $value = explode(' ', $value['text']);
                         //Datum letzter Füllung setzen
                         $this->SetValue('21008Datum', $value[0]);
                         $menge = substr($value[1], 0, -2); //kg entfernen
-                        $this->SetValue($id, $menge);
+                        $this->SetValue($value['id'], $menge);
+                        break;
+                    case 21005:
+                        $this->SendDebug('Gesamvebrauch', $value['text'], 0);
+                        $menge = explode(' ', $value['text']);
+                        $menge = $menge[0] / 100;
+                        $this->SetValue($value['id'], $menge);
                         break;
                     default:
                     $this->SetValue($value['id'], $value['text']);

@@ -241,6 +241,16 @@
                     "hdgType": false,
                     "action": false,
                     "keep": true
+                },
+                {
+                    "ident": "21005",
+                    "name": "Gesamtverbrauch",
+                    "type": "VARIABLETYPE_FLOAT",
+                    "profile": "HDG.Tonne",
+                    "dataid": 21005,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
                 }
             ]
         }
