@@ -46,27 +46,28 @@ require_once __DIR__ . '/../libs/HDGModule.php';
             $data = json_decode($JSONData['Data'], true);
 
             foreach ($data as $key => $value) {
-                switch ($value['id']) {
+                $id = $value['id'];
+                switch ($id) {
                     case 21006:
                     case 21007:
                         $value = explode(' ', $value['text']);
-                        $this->SetValue($value['id'], $value[0]);
+                        $this->SetValue($id, $value[0]);
                         break;
                     case 21008: //Letzte Füllung
                         $value = explode(' ', $value['text']);
                         //Datum letzter Füllung setzen
                         $this->SetValue('21008Datum', $value[0]);
                         $menge = substr($value[1], 0, -2); //kg entfernen
-                        $this->SetValue($value['id'], $menge);
+                        $this->SetValue($id, $menge);
                         break;
                     case 21005:
                         $this->SendDebug('Gesamvebrauch', $value['text'], 0);
                         $menge = explode(' ', $value['text']);
                         $menge = $menge[0] / 100;
-                        $this->SetValue($value['id'], $menge);
+                        $this->SetValue($id, $menge);
                         break;
                     default:
-                    $this->SetValue($value['id'], $value['text']);
+                    $this->SetValue($id, $value['text']);
                         break;
                 }
             }
