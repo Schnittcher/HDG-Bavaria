@@ -254,7 +254,7 @@
                 },
                 {
                     "ident": "1401",
-                    "name": "Zuführsystem Art",
+                    "name": "Pellet Zuführsystem Art",
                     "type": "VARIABLETYPE_STRING",
                     "profile": "",
                     "dataid": 1401,
