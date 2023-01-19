@@ -66,6 +66,20 @@ require_once __DIR__ . '/../libs/HDGModule.php';
                         $menge = $menge[0] / 100;
                         $this->SetValue($id, $menge);
                         break;
+                    case 1411:
+                    case 1412:
+                    case 1413:
+                    case 1414:
+                    case 1415:
+                    case 1416:
+                    case 1417:
+                    case 1418:
+                        if ($value['text'] == 'Aus') {
+                            $this->SetValue($value['id'], false);
+                        } else {
+                            $this->SetValue($value['id'], true);
+                        }
+                        break;
                     default:
                     $this->SetValue($id, $value['text']);
                         break;

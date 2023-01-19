@@ -251,6 +251,96 @@
                     "hdgType": "string",
                     "action": false,
                     "keep": true
+                },
+                {
+                    "ident": "1401",
+                    "name": "Zuführsystem Art",
+                    "type": "VARIABLETYPE_STRING",
+                    "profile": "",
+                    "dataid": 1401,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "1411",
+                    "name": "Zustand Sonde 1",
+                    "type": "VARIABLETYPE_BOOLEAN",
+                    "profile": "~Switch",
+                    "dataid": 1411,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "1412",
+                    "name": "Zustand Sonde 2",
+                    "type": "VARIABLETYPE_BOOLEAN",
+                    "profile": "~Switch",
+                    "dataid": 1412,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "1413",
+                    "name": "Zustand Sonde 3",
+                    "type": "VARIABLETYPE_BOOLEAN",
+                    "profile": "~Switch",
+                    "dataid": 1413,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "1414",
+                    "name": "Zustand Sonde 4",
+                    "type": "VARIABLETYPE_BOOLEAN",
+                    "profile": "~Switch",
+                    "dataid": 1414,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "1415",
+                    "name": "Zustand Sonde 5",
+                    "type": "VARIABLETYPE_BOOLEAN",
+                    "profile": "~Switch",
+                    "dataid": 1415,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "1416",
+                    "name": "Zustand Sonde 6",
+                    "type": "VARIABLETYPE_BOOLEAN",
+                    "profile": "~Switch",
+                    "dataid": 1416,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "1417",
+                    "name": "Zustand Sonde 7",
+                    "type": "VARIABLETYPE_BOOLEAN",
+                    "profile": "~Switch",
+                    "dataid": 1417,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "1418",
+                    "name": "Zustand Sonde 8",
+                    "type": "VARIABLETYPE_BOOLEAN",
+                    "profile": "~Switch",
+                    "dataid": 1418,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
                 }
             ]
         }
@@ -379,6 +469,16 @@
                     "keep": true
                 },
                 {
+                    "ident": "26008",
+                    "name": "Pumpe",
+                    "type": "VARIABLETYPE_BOOLEAN",
+                    "profile": "~Switch",
+                    "dataid": 26008,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
                     "ident": "20000",
                     "name": "Außentemperatur",
                     "type": "VARIABLETYPE_FLOAT",
@@ -462,6 +562,16 @@
                     "type": "VARIABLETYPE_FLOAT",
                     "profile": "~Temperature",
                     "dataid": 28099,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "28004",
+                    "name": "Pumpe",
+                    "type": "VARIABLETYPE_BOOLEAN",
+                    "profile": "~Switch",
+                    "dataid": 28004,
                     "hdgType": "string",
                     "action": false,
                     "keep": true

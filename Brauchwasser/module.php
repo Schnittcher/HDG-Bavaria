@@ -41,7 +41,18 @@ require_once __DIR__ . '/../libs/HDGModule.php';
             $JSONData = json_decode($JSONString, true);
             $data = json_decode($JSONData['Data'], true);
             foreach ($data as $key => $value) {
-                $this->SetValue($value['id'], $value['text']);
+                switch ($value['id']) {
+                    case 28004:
+                        if ($value['text'] == 'Aus') {
+                            $this->SetValue($value['id'], false);
+                        } else {
+                            $this->SetValue($value['id'], true);
+                        }
+                        break;
+                    default:
+                    $this->SetValue($value['id'], $value['text']);
+                        break;
+                }
             }
         }
     }
