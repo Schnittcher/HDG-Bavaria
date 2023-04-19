@@ -183,6 +183,16 @@
                     "hdgType": "string",
                     "action": false,
                     "keep": true
+                },
+                {
+                    "ident": "22069",
+                    "name": "Wärmeenergie",
+                    "type": "VARIABLETYPE_FLOAT",
+                    "profile": "~Electricity",
+                    "dataid": 22069,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
                 }
             ]
         }
