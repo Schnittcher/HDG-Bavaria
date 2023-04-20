@@ -47,8 +47,8 @@ require_once __DIR__ . '/../libs/HDGModule.php';
                 switch ($value['id']) {
                     case 22069:
                         $mwh = substr($value['text'], 0, -3); //MWh entfernen
-                        $this->SendDebug('mwh',$mwh,0);
-                        $this->SetValue($value['id'], $mwh * 1000);
+                        $this->SendDebug('mwh', $mwh, 0);
+                        $this->SetValue($value['id'], floatval($mwh * 1000));
                         break;
                     default:
                     $this->SetValue($value['id'], $value['text']);
