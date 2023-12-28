@@ -115,11 +115,7 @@ class HDGModule extends IPSModule
                 $post .= $Variable['Node'] . '-';
             }
         }
-        return $this->sendRequest($post);
-    }
 
-    protected function sendRequest($post)
-    {
         $this->SendDebug('sendRequest :: Post Nodes', $post, 0);
         $URL = $this->ReadPropertyString('URL');
         $headers[] = 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8';

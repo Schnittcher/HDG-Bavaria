@@ -43,11 +43,12 @@ require_once __DIR__ . '/../libs/HDGModule.php';
         {
             $this->SendDebug('JSON', $JSONString, 0);
             $JSONData = json_decode($JSONString, true);
-            $data = json_decode($JSONData['Data'], true);
+            if (array_key_exists('Data', $JSONData)) {
+                $data = json_decode($JSONData['Data'], true);
 
-            foreach ($data as $key => $value) {
-                $id = $value['id'];
-                switch ($id) {
+                foreach ($data as $key => $value) {
+                    $id = $value['id'];
+                    switch ($id) {
                     case 21006:
                     case 21007:
                         $value = explode(' ', $value['text']);
@@ -83,6 +84,7 @@ require_once __DIR__ . '/../libs/HDGModule.php';
                     default:
                     $this->SetValue($id, $value['text']);
                         break;
+                }
                 }
             }
         }

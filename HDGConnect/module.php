@@ -65,7 +65,31 @@ declare(strict_types=1);
             $this->SendDataToChildren(json_encode($Data));
         }
 
-        protected function sendRequest($post)
+        // To set a value: ActionManager.php?action=set_value_changed&i=<x>&v=<y>
+        // where x is the parameter without '-' and y is the value
+        public function setData($parameter, $value)
+        {
+            $URL = $this->ReadPropertyString('URL');
+            $headers[] = 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8';
+
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, $URL . '/ActionManager.php?action=set_value_changed&i=' . $parameter . '&v=' . $value);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+            $Response = curl_exec($ch);
+            $HttpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+            curl_setopt($ch, CURLOPT_POST, 1);
+            $this->SendDebug('sendRequest :: URl', $URL . '/ActionManager.php?action=set_value_changed&i=' . $parameter . '&v=' . $value, 0);
+            $this->SendDebug('sendRequest :: Response', $Response, 0);
+            $this->SendDebug('sendRequest :: HttpCode', $HttpCode, 0);
+            if ($HttpCode != 200) {
+                $this->LogMessage('Error: ' . $HttpCode, KL_ERROR);
+                return [];
+            }
+            return json_decode($Response, true);
+        }
+
+        public function sendRequest($post)
         {
             $this->SendDebug('sendRequest :: Post Nodes', $post, 0);
             $URL = $this->ReadPropertyString('URL');

@@ -39,9 +39,10 @@ require_once __DIR__ . '/../libs/HDGModule.php';
         {
             $this->SendDebug('JSON', $JSONString, 0);
             $JSONData = json_decode($JSONString, true);
-            $data = json_decode($JSONData['Data'], true);
-            foreach ($data as $key => $value) {
-                switch ($value['id']) {
+            if (array_key_exists('Data', $JSONData)) {
+                $data = json_decode($JSONData['Data'], true);
+                foreach ($data as $key => $value) {
+                    switch ($value['id']) {
                     case 28004:
                         if ($value['text'] == 'Aus') {
                             $this->SetValue($value['id'], false);
@@ -52,6 +53,7 @@ require_once __DIR__ . '/../libs/HDGModule.php';
                     default:
                     $this->SetValue($value['id'], $value['text']);
                         break;
+                }
                 }
             }
         }

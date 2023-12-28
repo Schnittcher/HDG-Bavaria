@@ -40,9 +40,11 @@ require_once __DIR__ . '/../libs/HDGModule.php';
         {
             $this->SendDebug('JSON', $JSONString, 0);
             $JSONData = json_decode($JSONString, true);
-            $data = json_decode($JSONData['Data'], true);
-            foreach ($data as $key => $value) {
-                $this->SetValue($value['id'], $value['text']);
+            if (array_key_exists('Data', $JSONData)) {
+                $data = json_decode($JSONData['Data'], true);
+                foreach ($data as $key => $value) {
+                    $this->SetValue($value['id'], $value['text']);
+                }
             }
         }
     }

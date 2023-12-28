@@ -41,10 +41,11 @@ require_once __DIR__ . '/../libs/HDGModule.php';
         {
             $this->SendDebug('JSON', $JSONString, 0);
             $JSONData = json_decode($JSONString, true);
-            $data = json_decode($JSONData['Data'], true);
+            if (array_key_exists('Data', $JSONData)) {
+                $data = json_decode($JSONData['Data'], true);
 
-            foreach ($data as $key => $value) {
-                switch ($value['id']) {
+                foreach ($data as $key => $value) {
+                    switch ($value['id']) {
                     case 22069:
                         $mwh = substr($value['text'], 0, -3); //MWh entfernen
                         $this->SendDebug('mwh', $mwh, 0);
@@ -53,6 +54,7 @@ require_once __DIR__ . '/../libs/HDGModule.php';
                     default:
                     $this->SetValue($value['id'], $value['text']);
                         break;
+                }
                 }
             }
         }
