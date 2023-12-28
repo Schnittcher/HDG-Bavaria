@@ -459,6 +459,26 @@
                     "keep": true
                 },
                 {
+                    "ident": "6024",
+                    "name": "Parallelverschiebung",
+                    "type": "VARIABLETYPE_FLOAT",
+                    "profile": "~Temperature",
+                    "dataid": 6024,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
+                    "ident": "6026",
+                    "name": "Steilheit",
+                    "type": "VARIABLETYPE_FLOAT",
+                    "profile": "",
+                    "dataid": 6026,
+                    "hdgType": "string",
+                    "action": false,
+                    "keep": true
+                },
+                {
                     "ident": "26099",
                     "name": "Angeforderte Temperatur bei Quelle",
                     "type": "VARIABLETYPE_FLOAT",
