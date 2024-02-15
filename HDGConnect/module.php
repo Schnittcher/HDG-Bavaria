@@ -108,7 +108,8 @@ declare(strict_types=1);
             $this->SendDebug('sendRequest :: Response', $Response, 0);
             $this->SendDebug('sendRequest :: HttpCode', $HttpCode, 0);
             if ($HttpCode != 200) {
-                $this->LogMessage('Error: ' . $HttpCode, KL_ERROR);
+                $this->SendDebug('Error: ' . $HttpCode,0);
+                //$this->LogMessage('Error: ' . $HttpCode, KL_ERROR);
                 return '{}';
             }
             return $Response;
